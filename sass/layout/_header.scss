@@ -1,0 +1,15 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    height: 20%;
+    border-bottom: 2px solid lightgray;
+    box-shadow: $boxshadow;
+
+
+    &__logo {
+    font-size: 1.75rem;
+    height: 100px;
+    }
+}
