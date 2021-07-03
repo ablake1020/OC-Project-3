@@ -7,3 +7,13 @@ $font-content: roboto;
 $font-special: shrikhand;
 
 $boxshadow: 0 2px 10px 1px lightgray;
+
+@mixin flexview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexview-partial {
+    display: flex;
+    justify-content: center;
+}
