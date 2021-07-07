@@ -1,0 +1,35 @@
+.restaurants {
+    background-color: rgb(243, 243, 243);
+
+    &__heading {
+        @include homepage-headings;
+    }
+
+    &__container {
+        margin-top: 1rem;
+        width: 24.25rem;
+        @include flexview;
+        flex-direction: column;
+    }
+
+    &__listing {
+        background-color: $white;
+        @include restaurant-dim;
+    }
+
+    &__image {
+    @include restaurant-image;
+    }
+
+    &__card-heading {
+        @include restuarant-headings;
+    }
+
+    &__card-desc {
+        @include restuarant-desc;
+    }
+
+    &__rating {
+        @include restaurant-rating;
+    }
+}

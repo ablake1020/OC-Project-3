@@ -1,15 +1,28 @@
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header {
+    @include flexview();
     background-color: $white;
-    height: 20%;
+    padding-top: 10px;
     border-bottom: 2px solid lightgray;
-    box-shadow: $boxshadow;
-
+    box-shadow: $box-shadow;
 
     &__logo {
-    font-size: 1.75rem;
-    height: 100px;
+    font-size: 2rem;
+    padding-bottom: 3px;
+    width: 100%;
+    @include flexview();
+    }
+}
+
+.location__container {
+    @include flexview();
+    background-color: rgb(223, 221, 221);
+    width: 100vw;
+    height: 4vh;
+    font-family: roboto;
+    font-size: 1.1rem;
+    border-top: 2px solid lightgray;
+    
+    #location__paris {
+        margin-left: 10px;
     }
 }
