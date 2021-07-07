@@ -7,7 +7,6 @@
 
     &__container {
         margin-top: 1rem;
-        width: 24.25rem;
         @include flexview;
         flex-direction: column;
     }
@@ -15,6 +14,7 @@
     &__listing {
         background-color: $white;
         @include restaurant-dim;
+        box-shadow: $box-shadow;
     }
 
     &__image {
@@ -32,4 +32,8 @@
     &__rating {
         @include restaurant-rating;
     }
+}
+
+#restaurants__listing--fourth {
+    margin-bottom: 4rem;
 }

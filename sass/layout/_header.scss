@@ -16,8 +16,7 @@
 .location__container {
     @include flexview();
     background-color: rgb(223, 221, 221);
-    width: 100vw;
-    height: 4vh;
+    height: 2rem;
     font-family: roboto;
     font-size: 1.1rem;
     border-top: 2px solid lightgray;

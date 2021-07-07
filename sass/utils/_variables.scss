@@ -51,7 +51,7 @@ $borderRadius: 1.25rem;
     width: 90%;
     height: 15rem;
     border-radius: $borderRadius;
-    margin: 0 0 20px 25px;
+    margin: 0 0 20px 2px;
 }
 
 @mixin restaurant-image {
@@ -64,8 +64,13 @@ $borderRadius: 1.25rem;
 }
 
 @mixin restaurant-rating {
-    margin: -2.5rem 0 0 18rem;
+    margin: -2.5rem 0 0 20rem;
     font-size: $home-icons *1.15;
     position: absolute;
     cursor: pointer;
+}
+
+@mixin footer-logo {
+    margin: 25px 0 15px 25px;
+    font-size: 22px;
 }
