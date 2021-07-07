@@ -7,8 +7,12 @@
   overflow-x: hidden;
 }
 
-h1, h2 {
+h1 {
   font-family: shrikhand;
+}
+
+h2, h3, h4, h5, h6, p, span {
+  font-family: roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header {
@@ -43,7 +47,7 @@ h1, h2 {
           align-items: center;
 }
 
-.location__container {
+.location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,12 +59,16 @@ h1, h2 {
           align-items: center;
   background-color: #dfdddd;
   height: 2rem;
-  font-family: roboto;
+  font-family: roboto, san-serif;
   font-size: 1.1rem;
   border-top: 2px solid lightgray;
 }
 
-.location__container #location__paris {
+.location__pin {
+  padding: 1px 1px 0 1px;
+}
+
+#location__paris {
   margin-left: 10px;
 }
 
@@ -72,6 +80,7 @@ h1, h2 {
 .footer__logo {
   margin: 25px 0 15px 25px;
   font-size: 22px;
+  font-family: shrikhand;
 }
 
 .footer__contents, .footer__paragraph {
@@ -102,60 +111,7 @@ h1, h2 {
 }
 
 .booking__contents {
-  width: 50rem;
-}
-
-.booking__heading {
-  font-size: 1.75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 10%;
-}
-
-.booking__subheading {
-  font-size: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 40px 10px 30px 20px;
-}
-
-.booking__btn {
-  width: 13.5rem;
-  border-radius: 2rem;
-  height: 20%;
-  font-size: 1.1rem;
-  margin-left: 24%;
-  color: #fff;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
-  -webkit-box-shadow: 0 2px 10px 1px lightgray;
-          box-shadow: 0 2px 10px 1px lightgray;
-  border: none;
-}
-
-.steps {
-  height: 25rem;
-  background-color: #fff;
-}
-
-.steps__heading {
-  margin: 25px 0 0 25px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.steps__container {
-  margin-top: 1rem;
-  width: 24rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +125,77 @@ h1, h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.booking__heading {
+  font-size: 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.booking__subheading {
+  font-size: 1.30rem;
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+}
+
+.booking__btn {
+  width: 15rem;
+  border-radius: 2rem;
+  height: 4rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border: none;
+  -webkit-box-shadow: 0 2px 10px 1px lightgray;
+          box-shadow: 0 2px 10px 1px lightgray;
+  cursor: pointer;
+}
+
+.booking__btn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: ease-in-out 100ms;
+  transition: ease-in-out 100ms;
+  -webkit-box-shadow: 0 2px 20px 3px lightgray;
+          box-shadow: 0 2px 20px 3px lightgray;
+}
+
+.steps {
+  height: 25rem;
+  background-color: #fff;
+}
+
+.steps__heading {
+  margin: 25px 0 0 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.steps__number {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.25rem;
+  background-color: #9356dc;
+  margin-right: 90%;
+  position: absolute;
 }
 
 .steps__contents {
@@ -191,12 +218,9 @@ h1, h2 {
   cursor: pointer;
 }
 
-.steps__contents:hover {
-  background-color: #e4d5f6;
-}
-
 .steps__contents #steps__contents__icon-1, .steps__contents #steps__contents__icon-2, .steps__contents #steps__contents__icon-3 {
   font-size: 1.5rem;
+  color: gray;
 }
 
 .steps__contents #steps__contents__icon-1 {
@@ -209,10 +233,10 @@ h1, h2 {
 
 .steps__contents #steps__contents__icon-3 {
   margin: 5px 1.5% 0 0;
+  color: #9356dc;
 }
 
 .steps__contents #steps__contents-list-2 {
-  display: inline-block;
   margin-right: 2%;
 }
 
@@ -229,6 +253,10 @@ h1, h2 {
   padding-top: 6px;
   font-size: 20px;
   font-weight: 600;
+}
+
+.steps #steps__three {
+  background-color: #e4d5f6;
 }
 
 .restaurants {
@@ -269,6 +297,11 @@ h1, h2 {
           box-shadow: 0 2px 10px 1px lightgray;
 }
 
+.restaurants__listing:hover {
+  -webkit-box-shadow: 0 2px 10px 1px #fff;
+          box-shadow: 0 2px 10px 1px #fff;
+}
+
 .restaurants__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,26 +318,51 @@ h1, h2 {
 }
 
 .restaurants__card-heading {
-  margin: 10px 0 0 14px;
+  margin: 10px 0 0 16px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  line-height: 1.5;
+  line-height: 1.75;
+  font-size: 18px;
+  padding-bottom: 2px;
 }
 
 .restaurants__card-desc {
-  margin-left: 14px;
+  margin-left: 16px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .restaurants__rating {
-  margin: -2.5rem 0 0 20rem;
+  margin: -2.5rem 0 0 77%;
   font-size: 1.725rem;
+  padding: 0 2px 0 2px;
   position: absolute;
   cursor: pointer;
+}
+
+.new {
+  width: 5.5rem;
+  height: 2rem;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #217460;
+  background-color: #99e2d0;
+  -webkit-box-shadow: 0 2px 10px 1px lightgray;
+          box-shadow: 0 2px 10px 1px lightgray;
+  left: 70%;
+  margin-top: -9rem;
+  position: absolute;
 }
 
 #restaurants__listing--fourth {

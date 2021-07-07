@@ -13,15 +13,19 @@
     }
 }
 
-.location__container {
+.location {
     @include flexview();
-    background-color: rgb(223, 221, 221);
+    background-color: #dfdddd;
     height: 2rem;
-    font-family: roboto;
+    font-family: roboto, san-serif;
     font-size: 1.1rem;
     border-top: 2px solid lightgray;
-    
-    #location__paris {
+}
+
+.location__pin {
+    padding: 1px 1px 0 1px;
+}
+
+#location__paris {
         margin-left: 10px;
     }
-}

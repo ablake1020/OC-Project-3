@@ -5,31 +5,37 @@
     background-color: rgb(243, 243, 243);
 
     &__contents {
-        width: 50rem;
+        width: 100%;
+        @include flexview;
+        flex-direction: column;
     }
 
     &__heading {
         font-size: 1.75rem;
         @include flexview-partial();
-        padding-top: 10%;
     }
 
     &__subheading {
-        font-size: 1.25rem;
-        @include flexview-partial();
-        padding: 40px 10px 30px 20px;
+        font-size: 1.30rem;
+        text-align: center;
+        padding: 40px 20px 30px 20px;
     }
 
     &__btn {
-        width: 13.5rem;
+        width: 15rem;
         border-radius: 2rem;
-        height: 20%;
+        height: 4rem;
         font-size: 1.1rem;
-        margin-left: 24%;
         color: $white;
         @include color-button;
-        box-shadow: $box-shadow;
         border: none;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.02);
+            transition: ease-in-out 100ms;
+            box-shadow: $box-shadow-hover;
+        }
     }
 }
 
@@ -39,13 +45,18 @@
 
     &__heading {
         @include homepage-headings;
+        margin-bottom: 1rem;
     }
 
-    &__container {
-        margin-top: 1rem;
-        width: 24rem;
+    &__number {
+        width: 2rem;
+        height: 2rem;
+        color: $white;
         @include flexview;
-        flex-direction: column;
+        border-radius: $borderRadius;
+        background-color: $color-primary;
+        margin-right: 90%;
+        position: absolute;
     }
 
     &__contents {
@@ -58,12 +69,9 @@
         box-shadow: $minor-shadow;
         cursor: pointer;
 
-        &:hover {
-            background-color: lighten($color-primary, 30%);
-        }
-
         #steps__contents__icon-1, #steps__contents__icon-2, #steps__contents__icon-3 {
             font-size: $home-icons;
+            color: gray;
         }
 
         #steps__contents__icon-1 {
@@ -76,10 +84,10 @@
 
         #steps__contents__icon-3 {
             margin: 5px 1.5% 0 0;
+            color: $color-primary;
         }
 
         #steps__contents-list-2 {
-            display: inline-block;
             margin-right: 2%;
         }
         
@@ -89,5 +97,9 @@
             font-size: $minor-headings;
             font-weight: 600;
         }
-    }    
+    }
+    
+    #steps__three {
+        background-color: lighten($color-primary, 30);
+    }
 }

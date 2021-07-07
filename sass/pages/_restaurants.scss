@@ -15,6 +15,9 @@
         background-color: $white;
         @include restaurant-dim;
         box-shadow: $box-shadow;
+        &:hover {
+            box-shadow: 0 2px 10px 1px $white;
+        }
     }
 
     &__image {
@@ -32,6 +35,19 @@
     &__rating {
         @include restaurant-rating;
     }
+}
+
+.new {
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 4px;
+    @include flexview;
+    color: darken($color-tertiary, 45);
+    background-color: $color-tertiary;
+    box-shadow: $box-shadow;
+    left: 70%;
+    margin-top: -9rem;
+    position: absolute;
 }
 
 #restaurants__listing--fourth {
