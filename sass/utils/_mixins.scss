@@ -1,0 +1,75 @@
+//homepage\\
+
+@mixin color-button {
+    background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
+}
+
+@mixin flexview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexview-partial {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin homepage-headings {
+    margin: 25px 0 0 25px;
+    width: fit-content;
+}
+
+@mixin restuarant-headings {
+    margin: 10px 0 0 16px;
+    width: fit-content;
+    line-height: 1.75;
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+
+@mixin restuarant-desc {
+    margin-left: 16px;
+    width: fit-content;
+    font-size: 16px;
+}
+
+@mixin restaurant-dim {
+    width: 90%;
+    height: 15rem;
+    border-radius: $borderRadius;
+    margin: 0 0 20px 2px;
+}
+
+@mixin restaurant-image {
+    @include flexview-partial();
+    width: 100%;
+    height: 10.5rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@mixin restaurant-rating {
+    margin: -2.5rem 0 0 77%;
+    font-size: $home-icons *1.15;
+    padding: 0 2px 0 2px;
+    position: absolute;
+    cursor: pointer;
+}
+
+@mixin footer-logo {
+    margin: 25px 0 15px 25px;
+    font-size: 22px;
+    font-family: shrikhand;
+}
+
+//bastille\\
+
+@mixin menus-headerIcon {
+    top: 23px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: black;
+    @include flexview();
+    position: absolute;
+}

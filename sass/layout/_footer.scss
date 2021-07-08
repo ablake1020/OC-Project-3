@@ -7,7 +7,7 @@
     }
 
     &__contents, &__paragraph {
-        margin: 10px 0 0 25px;
+        margin: 10px 0 0px 25px;
     }
 
     &__text {
@@ -21,4 +21,10 @@
 
 #footer__paragraph-second {
     margin-bottom: 2rem;
+}
+
+a {
+    color: $white;
+    display: inline-block;
+    text-decoration: none;
 }

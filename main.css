@@ -84,7 +84,7 @@ h2, h3, h4, h5, h6, p, span {
 }
 
 .footer__contents, .footer__paragraph {
-  margin: 10px 0 0 25px;
+  margin: 10px 0 0px 25px;
 }
 
 .footer__text {
@@ -97,6 +97,12 @@ h2, h3, h4, h5, h6, p, span {
 
 #footer__paragraph-second {
   margin-bottom: 2rem;
+}
+
+a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .booking {
@@ -367,5 +373,49 @@ h2, h3, h4, h5, h6, p, span {
 
 #restaurants__listing--fourth {
   margin-bottom: 4rem;
+}
+
+.header__arrow {
+  top: 23px;
+  left: 20px;
+  font-size: 1.5rem;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+.header__arrow:active {
+  color: #c9abee;
+}
+
+.bastille {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bastille__img {
+  width: 100%;
+}
+
+.menu__top__heading {
+  margin: 25px 0 0 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 /*# sourceMappingURL=main.css.map */

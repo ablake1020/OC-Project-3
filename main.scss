@@ -1,11 +1,13 @@
 // mobile design is first\\
 
 @import "sass/utils/variables";
+@import "sass/utils/mixins";
 
-@import "sass/base/foundations";
+@import "sass/base/typography";
 
 @import "sass/layout/header";
 @import "sass/layout/footer";
 
 @import "sass/pages/homepage-top";
 @import "sass/pages/restaurants";
+@import "sass/pages/menus";

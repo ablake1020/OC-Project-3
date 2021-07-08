@@ -1,0 +1,20 @@
+.header {
+    &__arrow {
+        @include menus-headerIcon;
+
+        &:active {
+            color: lighten($color-primary, 20);
+        }
+    }
+}        
+.bastille {
+    @include flexview;
+    
+    &__img {
+        width: 100%;
+    }
+}
+
+.menu__top__heading {
+    @include homepage-headings;
+}
