@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/pages/_menus.scss">
     <link rel="stylesheet" href="main.scss">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,16 +11,100 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <!--text appearing in the browser tab-->
-    <title>Ohmyfood | The Enchanted Plate</title>
+    <title>The Enchanted Plate</title>
     <link rel="icon" href="https://www.nicepng.com/png/detail/257-2571288_fork-icon-fork-icon-png.png" type="image/icon">
 </head>
 
 <body>
     <header class="header">
+        <a href="index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
         <h1 class="header__logo">Ohmyfood</h1>
     </header>
+
+        <img class="restaurant__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Enchanted" />
     
+    <main>
+        <div class="menu">
+            <h1 class="menu__heading" id="menu__enchanted">The Enchanted <br>Plate</h1>
+            <span><i class="far fa-heart restaurants__hearts-menu" id="restaurants__hearts-menu--edit"></i></span>
+            <div class="menu__listings">
+                <h3 class="menu__subheading">Entrees</h3>
+                <hr>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Foie Gras Ravioli</h3>
+                    <p class="menu__items__subheading">with truffle cream</p>
+                        <span class="menu__items__price"><p>25€</p></span>
+                </div>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Oscietra Caviar</h3>
+                    <p class="menu__items__subheading">with buckwheat blinis</p>
+                        <span class="menu__items__price"><p>35€</p></span>
+                </div>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Lobster and Leek Foam</h3>
+                    <p class="menu__items__subheading">marinated with orange zest</p>
+                        <span class="menu__items__price"><p>20€</p></span>
+                </div>
+                <div class="menu__items" id="bottom__1">
+                    <h3 class="menu__items__heading">Duck Foie Gras</h3>
+                    <p class="menu__items__subheading">with fig jam and grilled baguette</p>
+                        <span class="menu__items__price"><p>35€</p></span>
+                </div>
+                <h3 class="menu__subheading">Main Dish</h3>
+                <hr>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Fresh Buttered Scallops</h3>
+                    <p class="menu__items__subheading">with white celery puree</p>
+                        <span class="menu__items__price"><p>40€</p></span>
+                </div>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Pan-Fried Lobster</h3>
+                    <p class="menu__items__subheading">with mashed sweet potatoes</p>
+                        <span class="menu__items__price"><p>35€</p></span>
+                </div>
+                <div class="menu__items" id="bottom__2">
+                    <h3 class="menu__items__heading">Braised Ox Tail</h3>
+                    <p class="menu__items__subheading">wih wild rice and lemon zest</p>
+                        <span class="menu__items__price"><p>44€</p></span>
+                </div>
+                <h3 class="menu__subheading">Desserts</h3>
+                <hr>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Chocolate & Hazelnut Macaroons</h3>
+                    <p class="menu__items__subheading">with caramel butter ice cream</p>
+                        <span class="menu__items__price"><p>18€</p></span>
+                </div>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Baba au rhum</h3>
+                    <p class="menu__items__subheading">with lemon drizzle</p>
+                        <span class="menu__items__price"><p>22€</p></span>
+                </div>
+                <div class="menu__items" id="bottom__3">
+                    <h3 class="menu__items__heading">Lemon Meringue Pie</h3>
+                    <p class="menu__items__subheading">deconstructed</p>
+                        <span class="menu__items__price"><p>23€</p></span>
+                </div>
+            </div>
+
+            <button class="menu__btn">Order</button>
+
+            <footer class="footer">
+                <h2 class="footer__logo">Ohmyfood</h2>
+                <div class="footer__contents">
+                    <i class="fas fa-utensils"></i>
+                    <span class="footer__text">Suggest a restaurant</span>
+                </div>
+                <div class="footer__contents">
+                    <i class="fas fa-hands-helping"></i>
+                    <span class="footer__text" id="footer__partner">Become a partner</span>
+                </div>
+                <p class="footer__paragraph">Legal</p>
+                <a href="mailto:aaronamb19@gmail.com" class="footer__paragraph" id="footer__paragraph-second">Contact</a>
+            </footer>
+        </div>
+
+    </main>    
+
 </body>
 
 </html>

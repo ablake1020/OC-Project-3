@@ -20,6 +20,10 @@
     font-family: roboto, san-serif;
     font-size: 1.1rem;
     border-top: 2px solid lightgray;
+    cursor: pointer;
+    &:hover {
+        color: $color-primary;
+    }
 }
 
 .location__pin {

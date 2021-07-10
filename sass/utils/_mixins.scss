@@ -14,6 +14,11 @@
     justify-content: center;
 }
 
+@mixin flexview-column {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin homepage-headings {
     margin: 25px 0 0 25px;
     width: fit-content;
@@ -49,7 +54,7 @@
     cursor: pointer;
 }
 
-@mixin restaurant-rating {
+@mixin restaurant-heart {
     margin: -2.5rem 0 0 77%;
     font-size: $home-icons *1.15;
     padding: 0 2px 0 2px;
@@ -63,7 +68,16 @@
     font-family: shrikhand;
 }
 
-//bastille\\
+//menus\\
+
+@mixin menu-default {
+    background-color: $color-menu;
+    width: 100%;
+    border: none;
+    border-radius: 3.5rem 3.5rem 0 0;
+    margin-top: -4rem;
+    position: absolute;
+}
 
 @mixin menus-headerIcon {
     top: 23px;
@@ -72,4 +86,56 @@
     color: black;
     @include flexview();
     position: absolute;
+}
+
+@mixin menus-headings {
+    margin: 35px 0 0 25px;
+}
+
+@mixin menus-subheadings {
+    text-transform: uppercase;
+    margin: 20px 0 0 25px;
+    color: #606060
+}
+
+@mixin menu-heart {
+    font-size: $home-icons *1.15;
+    margin: -9.5% 0 0 82%;
+    padding: 0 2px 0 2px;
+    position: absolute;
+    cursor: pointer;
+}
+
+@mixin menu-itemsDefault {
+    @include flexview-column;
+    width: 90%;
+    box-shadow: $box-shadow;
+    height: 5rem;
+    background-color: $white;
+    margin: 16px 0 0 20px;
+    border-radius: 1rem;
+    font-weight: 600;
+    &:hover {
+        box-shadow: $box-shadow-hover;
+        cursor: pointer;
+    } 
+}
+
+@mixin menu-btn {
+    @include color-button;
+    width: 14rem;
+    border-radius: 2rem;
+    height: 4rem;
+    font-size: 1.25rem;
+    margin-bottom: 75px;
+    margin-left: 90px;
+    color: $white;
+    border: none;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.02);
+        transition: ease-in-out 100ms;
+        box-shadow: $box-shadow-hover;
+    }
 }

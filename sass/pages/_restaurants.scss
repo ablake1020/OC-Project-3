@@ -32,8 +32,8 @@
         @include restuarant-desc;
     }
 
-    &__rating {
-        @include restaurant-rating;
+    &__hearts {
+        @include restaurant-heart;
     }
 }
 

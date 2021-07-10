@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <title>Ohmyfood! | Bastille</title>
+    <title>Bastille</title>
     <link rel="icon" href="https://www.nicepng.com/png/detail/257-2571288_fork-icon-fork-icon-png.png" type="image/icon">
 </head>
 
@@ -21,15 +21,83 @@
         <h1 class="header__logo">Ohmyfood</h1>
     </header>
 
-    <div class="bastille">
-        <img class="bastille__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille" />
-    </div>
+        <img class="restaurant__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille" />
     
     <main>
-        <div class="menu__top">
-            <h1 class="menu__top__heading">Bastille</h1>
-            <span><i class="far fa-heart restaurants__rating"></i></span>
+        <div class="menu">
+            <h1 class="menu__heading">Bastille</h1>
+            <span><i class="far fa-heart restaurants__hearts-menu"></i></span>
+            <div class="menu__listings">
+                <h3 class="menu__subheading">Entrees</h3>
+                <hr>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Citrus Squid Carpaccio</h3>
+                    <p class="menu__items__subheading">with orange zest</p>
+                        <span class="menu__items__price"><p>25€</p></span>
+                </div>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Grandmother's Vegetable Soup</h3>
+                    <p class="menu__items__subheading">carrots, parsnips, Jerusalem artichoke</p>
+                        <span class="menu__items__price"><p>35€</p></span>
+                </div>
+                <div class="menu__items" id="bottom__1">
+                    <h3 class="menu__items__heading">Onion Soup</h3>
+                    <p class="menu__items__subheading">revisited</p>
+                        <span class="menu__items__price"><p>20€</p></span>
+                </div>
+                <h3 class="menu__subheading">Main Dish</h3>
+                <hr>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Scallops</h3>
+                    <p class="menu__items__subheading">with mashed parsnips</p>
+                        <span class="menu__items__price"><p>40€</p></span>
+                </div>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Magret de canard</h3>
+                    <p class="menu__items__subheading">with mashed potatoes</p>
+                        <span class="menu__items__price"><p>35€</p></span>
+                </div>
+                <div class="menu__items" id="bottom__2">
+                    <h3 class="menu__items__heading">Game Hen</h3>
+                    <p class="menu__items__subheading">with vegetable gnocchis</p>
+                        <span class="menu__items__price"><p>44€</p></span>
+                </div>
+                <h3 class="menu__subheading">Desserts</h3>
+                <hr>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Floral Ice Cream</h3>
+                    <p class="menu__items__subheading">with hazelnut butter</p>
+                        <span class="menu__items__price"><p>12€</p></span>
+                </div>
+                <div class="menu__items">
+                    <h3 class="menu__items__heading">Chocolate Lava Cake</h3>
+                    <p class="menu__items__subheading">revisited</p>
+                        <span class="menu__items__price"><p>22€</p></span>
+                </div>
+                <div class="menu__items" id="bottom__3">
+                    <h3 class="menu__items__heading">Napolean</h3>
+                    <p class="menu__items__subheading">with blueberries and marzipan</p>
+                        <span class="menu__items__price"><p>23€</p></span>
+                </div>
+            </div>
+
+            <button class="menu__btn">Order</button>
+
+            <footer class="footer">
+                <h2 class="footer__logo">Ohmyfood</h2>
+                <div class="footer__contents">
+                    <i class="fas fa-utensils"></i>
+                    <span class="footer__text">Suggest a restaurant</span>
+                </div>
+                <div class="footer__contents">
+                    <i class="fas fa-hands-helping"></i>
+                    <span class="footer__text" id="footer__partner">Become a partner</span>
+                </div>
+                <p class="footer__paragraph">Legal</p>
+                <a href="mailto:aaronamb19@gmail.com" class="footer__paragraph" id="footer__paragraph-second">Contact</a>
+            </footer>
         </div>
+
     </main>    
 
 </body>
