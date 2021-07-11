@@ -23,6 +23,7 @@
     cursor: pointer;
     &:hover {
         color: $color-primary;
+        transition: 300ms ease-in-out;
     }
 }
 
@@ -31,5 +32,5 @@
 }
 
 #location__paris {
-        margin-left: 10px;
-    }
+    margin-left: 10px;
+}

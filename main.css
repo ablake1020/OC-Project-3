@@ -75,6 +75,8 @@ hr {
 
 .location:hover {
   color: #9356dc;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .location__pin {
@@ -342,11 +344,19 @@ a {
   margin: 0 0 20px 2px;
   -webkit-box-shadow: 0 2px 10px 0.5px lightgray;
           box-shadow: 0 2px 10px 0.5px lightgray;
+  cursor: pointer;
 }
 
 .restaurants__listing:hover {
   -webkit-box-shadow: 0 2px 10px 1px #fff;
           box-shadow: 0 2px 10px 1px #fff;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.restaurants__listing:active {
+  -webkit-box-shadow: 0 2px 10px 1px #99e2d0;
+          box-shadow: 0 2px 10px 1px #99e2d0;
 }
 
 .restaurants__image {
@@ -445,7 +455,6 @@ a {
 
 .restaurant__img {
   width: 100%;
-  z-index: inherit;
 }
 
 .menu {
@@ -541,6 +550,11 @@ a {
   transition: ease-in-out 100ms;
   -webkit-box-shadow: 0 2px 20px 3px lightgray;
           box-shadow: 0 2px 20px 3px lightgray;
+}
+
+.menu__btn:active {
+  -webkit-box-shadow: 0 2px 10px 1px #ff79da;
+          box-shadow: 0 2px 10px 1px #ff79da;
 }
 
 #menu__enchanted {
