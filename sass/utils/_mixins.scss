@@ -25,7 +25,7 @@
 }
 
 @mixin restuarant-headings {
-    margin: 10px 0 0 16px;
+    margin: 5px 0 0 16px;
     width: fit-content;
     line-height: 1.75;
     font-size: 18px;
@@ -36,6 +36,7 @@
     margin-left: 16px;
     width: fit-content;
     font-size: 16px;
+    font-weight: 200;
 }
 
 @mixin restaurant-dim {
@@ -95,7 +96,8 @@
 @mixin menus-subheadings {
     text-transform: uppercase;
     margin: 20px 0 0 25px;
-    color: #606060
+    color: #606060;
+    font-weight: 300;
 }
 
 @mixin menu-heart {
@@ -135,7 +137,7 @@
     cursor: pointer;
     &:hover {
         transform: scale(1.02);
-        transition: ease-in-out 100ms;
+        transition:100ms ease-in-out;
         box-shadow: $box-shadow-hover;
     }
 }

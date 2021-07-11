@@ -41,9 +41,8 @@
 }
 
 .steps {
-    height: 25rem;
+    margin-bottom: 3rem;
     background-color: $white;
-    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -56,11 +55,11 @@
         width: 2rem;
         height: 2rem;
         color: $white;
-        @include flexview;
+        padding: 6px 0 0 11px;
+        margin: 25px 0 0 -15px;
+        position: absolute;
         border-radius: $borderRadius;
         background-color: $color-primary;
-        margin-right: 90%;
-        position: absolute;
     }
 
     &__contents {
@@ -69,37 +68,25 @@
         border-radius: $borderRadius;
         width: 90%;
         margin: 0 0 15px 25px;
-        @include flexview;
+        display: inline-block;
         box-shadow: $minor-shadow;
         cursor: pointer;
 
         #steps__contents__icon-1, #steps__contents__icon-2, #steps__contents__icon-3 {
             font-size: $home-icons;
             color: gray;
-            margin: 5px 65% 0 0;
-            position: absolute;
+            margin: 30px 0 0 40px;
         }
 
         #steps__contents__icon-3 {
             color: $color-primary;
         }
-
-        #steps__contents-list-1 {
-            margin-right: 6%;
-        } 
-        
-        #steps__contents-list-2 {
-            margin-right: 12%;
-        }
-
-        #steps__contents-list-3 {
-            margin-left: 12%;
-        }
         
         &-list {
             @include flexview;
-            padding-top: 6px;
-            font-size: 1.25rem;
+            width: fit-content;
+            margin: -28px 0 0 90px;
+            font-size: 1.2rem;
             font-weight: 600;
         }
     }
