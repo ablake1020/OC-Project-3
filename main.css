@@ -429,6 +429,7 @@ a {
 
 .restaurant__img {
   width: 100%;
+  position: relative;
 }
 
 .menu {
