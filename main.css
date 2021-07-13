@@ -44,6 +44,7 @@ hr {
   }
   .booking__heading {
     width: 42%;
+    letter-spacing: normal;
   }
   .fa-arrow-down {
     font-size: 23px;
@@ -381,6 +382,7 @@ a {
 
 .booking__heading {
   font-size: 1.75rem;
+  letter-spacing: -.75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,6 +742,8 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  letter-spacing: -.75px;
+  font-size: 1rem;
 }
 
 .restaurants__hearts-menu {
