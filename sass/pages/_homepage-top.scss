@@ -71,7 +71,7 @@
         margin: 0 0 15px 25px;
         display: inline-block;
         box-shadow: $minor-shadow;
-        cursor: pointer;
+        cursor:default ;
 
         #steps__contents__icon-1, #steps__contents__icon-2, #steps__contents__icon-3 {
             font-size: $home-icons;
