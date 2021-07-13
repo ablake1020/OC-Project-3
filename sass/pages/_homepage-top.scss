@@ -13,7 +13,6 @@
     &__heading {
         font-size: 1.75rem;
         @include flexview-partial;
-        letter-spacing: -1px;
     }
 
     &__subheading {
@@ -49,6 +48,7 @@
     &__heading {
         @include homepage-headings;
         margin-bottom: 1rem;
+        letter-spacing: -.75px;
     }
 
     &__number {
@@ -86,7 +86,8 @@
             @include flexview;
             width: fit-content;
             margin: -28px 0 0 90px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            letter-spacing: -.75px;
             font-weight: 600;
         }
     }

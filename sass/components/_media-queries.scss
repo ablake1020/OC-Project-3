@@ -1,4 +1,14 @@
 @media  screen and (min-width: 668px) {
+    * {
+        letter-spacing: normal;
+    }
+    
+    .restaurant__img {
+        width: 100%;
+        object-fit: cover;
+        height: 350px;
+    }
+    
     .booking {
         width: 90%;
         margin-left: 5%;
@@ -34,6 +44,10 @@
             transition: 300ms ease-in-out;
             cursor: pointer;
         }
+    }
+
+    #steps__contents-list-1, #steps__contents-list-2, #steps__contents-list-3 {
+        letter-spacing: normal;
     }
 
     .restaurants {
@@ -96,5 +110,15 @@
         position: relative;
         margin: -9.5rem 0 0 22rem;
         box-shadow: $box-shadow;
+    }
+
+    //menus\\
+
+    .br-mobile {
+        display: none;
+    }
+
+    .menu__items__heading {
+        letter-spacing: normal;
     }
 }

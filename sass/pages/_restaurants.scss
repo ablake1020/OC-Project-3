@@ -3,6 +3,7 @@
 
     &__heading {
         @include homepage-headings;
+        letter-spacing: -.75px;
     }
 
     &__container {
@@ -32,6 +33,7 @@
 
     &__card-heading {
         @include restuarant-headings;
+        letter-spacing: -.75px
     }
 
     &__card-desc {

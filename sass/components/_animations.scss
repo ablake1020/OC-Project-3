@@ -1,0 +1,35 @@
+@keyframes menu-fadeIn__delay {
+    0%, 38% {
+        opacity: 0; 
+    }
+
+    37% {
+        transform: translate(0px, 15px)
+    }
+  
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes menu__subheading-appear {
+    0%, 38% {
+        opacity: 0; 
+    }
+
+    37% {
+        transform: translate(2rem, 0rem)
+    }
+  
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
