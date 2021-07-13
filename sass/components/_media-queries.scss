@@ -21,10 +21,6 @@
         }
     }
 
-    .fa-arrow-down {
-        font-size: 23px;
-        margin-right: 20px;
-    }
     .steps {
         display: grid !important;
         grid-template-columns: repeat(4, 34.25ch);
@@ -114,12 +110,27 @@
     }
 
     //menus\\
-
+    
     .br-mobile {
         display: none;
     }
 
+    .menu__heading {
+        padding-left: 15vw;
+        width: 100%;
+        position: relative;
+    }
+
     .menu__items__heading {
         letter-spacing: normal;
+    }
+
+    .menu__items__priceCheck {
+        padding-left: 3rem;
+    }
+    
+    .menu__listings {
+        width: 50rem;
+        margin-left: 15vw;
     }
 }
