@@ -501,7 +501,6 @@ a {
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
