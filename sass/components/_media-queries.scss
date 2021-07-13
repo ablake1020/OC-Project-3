@@ -1,0 +1,100 @@
+@media  screen and (min-width: 668px) {
+    .booking {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3rem;
+        @include homepage-desktopBorder;
+
+        &__heading {
+            width: 42%;
+        }
+    }
+
+    .fa-arrow-down {
+        font-size: 23px;
+        margin-right: 20px;
+    }
+    .steps {
+        display: grid !important;
+        grid-template-columns: repeat(4, 34.25ch);
+        margin-top: 3rem;
+    }
+
+    .steps__heading__text {
+        width: 16rem;
+        margin-left: 10px;
+        @include flexview;
+        font-size: 2.25rem;
+        color: $color-primary;
+        background-color: lighten($color-primary, 30);
+        border-radius: 1rem;
+        &:hover {
+            color: $color-secondary;
+            background-color: lighten($color-secondary, 20);
+            transition: 300ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+
+    .restaurants {
+
+        &__container {
+            display: none;
+        }
+
+        &__listing {
+            display: none;
+        }
+    }
+
+    .restaurants__heading__text {
+        font-size: 2.25rem;
+        margin-left: 10px;
+        width: 16rem;
+        @include flexview;
+        color: $color-primary;
+        background-color: lighten($color-primary, 30);
+        border-radius: 1rem;
+        &:hover {
+            color: $color-secondary;
+            background-color: lighten($color-secondary, 20);
+            transition: 300ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+
+    #restaurants__container__desktop {
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    #desktop__listing-1, #desktop__listing-2, #desktop__listing-3, #desktop__listing-4 {
+        display: grid;
+        width: 80%;
+    }
+
+    #desktop__listing-3, #desktop__listing-4 {
+        margin-bottom: 3rem;
+    }
+
+    .new {
+        display: none !important;
+    }
+
+    #new__desktop-1, #new__desktop-2 {
+        font-size: 1rem;
+        width: 8vw;
+        height: 2.75vw;
+        @include flexview;
+        color: darken($color-tertiary, 45);
+        background-color: $color-tertiary;
+        border-radius: 4px;
+        position: relative;
+        margin: -9.5rem 0 0 22rem;
+        box-shadow: $box-shadow;
+    }
+}

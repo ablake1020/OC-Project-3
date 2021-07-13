@@ -61,12 +61,25 @@
     padding: 0 2px 0 2px;
     position: absolute;
     cursor: pointer;
+        
+    &:hover {
+        transform: scale(1.15);
+        transition: 300ms ease-in-out;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 @mixin footer-logo {
     margin: 25px 0 15px 25px;
     font-size: 22px;
     font-family: shrikhand;
+}
+
+@mixin homepage-desktopBorder {
+    border: 1px solid $color-secondary;
+    border-radius: 5rem;
 }
 
 //menus\\
