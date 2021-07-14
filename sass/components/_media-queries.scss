@@ -8,18 +8,6 @@
         object-fit: cover;
         height: 350px;
     }
-    
-    .booking {
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 3rem;
-        @include homepage-desktopBorder;
-
-        &__heading {
-            width: 42%;
-            letter-spacing: normal;
-        }
-    }
 
     .steps {
         display: grid !important;
@@ -28,50 +16,15 @@
     }
 
     .steps__heading__text {
-        width: 16rem;
-        margin-left: 10px;
-        @include flexview;
-        font-size: 2.25rem;
-        color: $color-primary;
-        background-color: lighten($color-primary, 30);
-        border-radius: 1rem;
-        &:hover {
-            color: $color-secondary;
-            background-color: lighten($color-secondary, 20);
-            transition: 300ms ease-in-out;
-            cursor: pointer;
-        }
+        margin-left: 15px;
     }
 
     #steps__contents-list-1, #steps__contents-list-2, #steps__contents-list-3 {
         letter-spacing: normal;
     }
 
-    .restaurants {
-
-        &__container {
-            display: none;
-        }
-
-        &__listing {
-            display: none;
-        }
-    }
-
     .restaurants__heading__text {
-        font-size: 2.25rem;
-        margin-left: 10px;
-        width: 16rem;
-        @include flexview;
-        color: $color-primary;
-        background-color: lighten($color-primary, 30);
-        border-radius: 1rem;
-        &:hover {
-            color: $color-secondary;
-            background-color: lighten($color-secondary, 20);
-            transition: 300ms ease-in-out;
-            cursor: pointer;
-        }
+        margin-left: 15px;
     }
 
     #restaurants__container__desktop {
@@ -105,7 +58,7 @@
         background-color: $color-tertiary;
         border-radius: 4px;
         position: relative;
-        margin: -9.5rem 0 0 22rem;
+        margin: -9.5rem 0 0 20rem;
         box-shadow: $box-shadow;
     }
 

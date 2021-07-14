@@ -31,15 +31,16 @@
 
     &__items {
         @include menu-itemsDefault;
+        overflow-x: hidden;
         animation: menu-fadeIn__delay 1s ease-in;
 
-        &__heading {
+        &__text h3 {
             padding: 15px 0 0 10px;
             letter-spacing: -.75px;
             font-size: 1rem;
         }
 
-        &__subheading {
+        &__text p {
             font-weight: 200 !important;
             padding: 8px 0 0 10px;
             width: fit-content;
@@ -53,6 +54,21 @@
             width: fit-content;
             letter-spacing: -.75px;
             font-size: 1rem;
+        }
+
+        &__priceCheck p {
+            text-overflow: unset;
+            overflow-y: hidden;
+        }
+
+        &__priceCheck div {
+            background-color: $color-tertiary;
+            color: white;
+            //@include flexview;
+            //flex-basis: 65px;
+            //flex-grow: 0;
+            //flex-shrink: 0;
+            overflow-y: hidden;
         }
     }
 }

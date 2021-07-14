@@ -35,17 +35,6 @@ hr {
        object-fit: cover;
     height: 350px;
   }
-  .booking {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 3rem;
-    border: 1px solid #ff79da;
-    border-radius: 5rem;
-  }
-  .booking__heading {
-    width: 42%;
-    letter-spacing: normal;
-  }
   .steps {
     display: -ms-grid !important;
     display: grid !important;
@@ -54,61 +43,13 @@ hr {
     margin-top: 3rem;
   }
   .steps__heading__text {
-    width: 16rem;
-    margin-left: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 2.25rem;
-    color: #9356dc;
-    background-color: #e4d5f6;
-    border-radius: 1rem;
-  }
-  .steps__heading__text:hover {
-    color: #ff79da;
-    background-color: #ffdff6;
-    -webkit-transition: 300ms ease-in-out;
-    transition: 300ms ease-in-out;
-    cursor: pointer;
+    margin-left: 15px;
   }
   #steps__contents-list-1, #steps__contents-list-2, #steps__contents-list-3 {
     letter-spacing: normal;
   }
-  .restaurants__container {
-    display: none;
-  }
-  .restaurants__listing {
-    display: none;
-  }
   .restaurants__heading__text {
-    font-size: 2.25rem;
-    margin-left: 10px;
-    width: 16rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #9356dc;
-    background-color: #e4d5f6;
-    border-radius: 1rem;
-  }
-  .restaurants__heading__text:hover {
-    color: #ff79da;
-    background-color: #ffdff6;
-    -webkit-transition: 300ms ease-in-out;
-    transition: 300ms ease-in-out;
-    cursor: pointer;
+    margin-left: 15px;
   }
   #restaurants__container__desktop {
     margin-left: 10%;
@@ -149,7 +90,7 @@ hr {
     background-color: #99e2d0;
     border-radius: 4px;
     position: relative;
-    margin: -9.5rem 0 0 22rem;
+    margin: -9.5rem 0 0 20rem;
     -webkit-box-shadow: 0 2px 10px 0.5px lightgray;
             box-shadow: 0 2px 10px 0.5px lightgray;
   }
@@ -242,6 +183,106 @@ hr {
     opacity: 1;
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
+  }
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  -webkit-animation: spin-finished 1s;
+          animation: spin-finished 1s;
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9356dc;
+  overflow-y: hidden;
+  -webkit-animation: spin 2s linear 3;
+          animation: spin 2s linear 3;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ff79da;
+  -webkit-animation: spin 3s linear 2;
+          animation: spin 3s linear 2;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #99e2d0;
+  -webkit-animation: spin 1.5s linear 3;
+          animation: spin 1.5s linear 3;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spin-finished {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes spin-finished {
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -638,6 +679,10 @@ a {
   margin-bottom: 4rem;
 }
 
+#new__desktop-1, #new__desktop-2 {
+  display: none;
+}
+
 .header__arrow {
   top: 23px;
   left: 20px;
@@ -710,6 +755,7 @@ a {
   margin: 16px 0 0 20px;
   border-radius: 1rem;
   font-weight: 600;
+  overflow-x: hidden;
   -webkit-animation: menu-fadeIn__delay 1s ease-in;
           animation: menu-fadeIn__delay 1s ease-in;
 }
@@ -720,13 +766,13 @@ a {
   cursor: pointer;
 }
 
-.menu__items__heading {
+.menu__items__text h3 {
   padding: 15px 0 0 10px;
   letter-spacing: -.75px;
   font-size: 1rem;
 }
 
-.menu__items__subheading {
+.menu__items__text p {
   font-weight: 200 !important;
   padding: 8px 0 0 10px;
   width: -webkit-fit-content;
@@ -750,6 +796,17 @@ a {
   width: fit-content;
   letter-spacing: -.75px;
   font-size: 1rem;
+}
+
+.menu__items__priceCheck p {
+  text-overflow: unset;
+  overflow-y: hidden;
+}
+
+.menu__items__priceCheck div {
+  background-color: #99e2d0;
+  color: white;
+  overflow-y: hidden;
 }
 
 .restaurants__hearts-menu {
