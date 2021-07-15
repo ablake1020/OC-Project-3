@@ -42,8 +42,9 @@
 @mixin restaurant-dim {
     width: 90%;
     height: 15rem;
+    overflow-y: hidden;
     border-radius: $borderRadius;
-    margin: 0 0 20px 2px;
+    margin-bottom: 20px;
 }
 
 @mixin restaurant-image {
@@ -56,13 +57,14 @@
 }
 
 @mixin restaurant-heart {
-    margin: -2.5rem 0 0 77%;
+    margin: -10% 0 20px 83%;
+    @include flexview;
+    width: 36px;
+    padding-left: 2px;
     font-size: $home-icons *1.15;
-    padding: 0 2px 0 2px;
-    position: absolute;
     cursor: pointer;
         
-    &:hover {
+    &:hover, &:active {
         transform: scale(1.15);
         transition: 300ms ease-in-out;
         background: -webkit-linear-gradient($color-primary, $color-secondary);
@@ -115,7 +117,7 @@
 
 @mixin menu-heart {
     font-size: $home-icons *1.15;
-    margin: -9.5% 0 0 82%;
+    margin: -40px 0 0 82%;
     padding: 0 2px 0 2px;
     position: absolute;
     cursor: pointer;
@@ -142,7 +144,7 @@
     border-radius: 2rem;
     height: 4rem;
     font-size: 1.25rem;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
     color: $white;
     border: none;
     box-shadow: $box-shadow;
@@ -151,5 +153,61 @@
         transform: scale(1.02);
         transition:100ms ease-in-out;
         box-shadow: $box-shadow-hover;
+    }
+}
+
+// animations \\
+
+@mixin loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: $white;
+    animation: spin-finished 1s;
+    animation-delay: 4.2s;
+    animation-fill-mode: both;
+}
+
+@mixin loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $color-primary;
+    overflow-y: hidden;
+    animation: spin 2s linear 3;
+    
+    &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $color-secondary;
+    animation: spin 3s linear 2;
+    }
+    
+    &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $color-tertiary;
+    animation: spin 1.5s linear 3;
     }
 }

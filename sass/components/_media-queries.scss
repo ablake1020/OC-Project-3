@@ -1,30 +1,36 @@
-@media  screen and (min-width: 668px) {
+@media  screen and (min-width: 768px) {
     * {
         letter-spacing: normal;
     }
     
+    // how it works \\
+
+    .steps {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+        margin: 3rem 7rem 0 0;
+    }
+
+    .steps__heading__text {
+        margin-left: 10%;
+        width: 300px;
+    }
+
+    #steps__contents-list-1, #steps__contents-list-2, #steps__contents-list-3 {
+        letter-spacing: normal;
+    }  
+    
+    //restaurants \\
+
     .restaurant__img {
         width: 100%;
         object-fit: cover;
         height: 350px;
     }
 
-    .steps {
-        display: grid !important;
-        grid-template-columns: repeat(4, 34.25ch);
-        margin-top: 3rem;
-    }
-
-    .steps__heading__text {
-        margin-left: 15px;
-    }
-
-    #steps__contents-list-1, #steps__contents-list-2, #steps__contents-list-3 {
-        letter-spacing: normal;
-    }
-
     .restaurants__heading__text {
-        margin-left: 15px;
+        margin-left: 10%;
+        width: 300px;
     }
 
     #restaurants__container__desktop {
@@ -46,20 +52,7 @@
     }
 
     .new {
-        display: none !important;
-    }
-
-    #new__desktop-1, #new__desktop-2 {
-        font-size: 1rem;
-        width: 8vw;
-        height: 2.75vw;
-        @include flexview;
-        color: darken($color-tertiary, 45);
-        background-color: $color-tertiary;
-        border-radius: 4px;
-        position: relative;
-        margin: -9.5rem 0 0 20rem;
-        box-shadow: $box-shadow;
+    margin-left: 75% !important;
     }
 
     //menus\\
@@ -83,7 +76,7 @@
     }
     
     .menu__listings {
-        width: 50rem;
+        width: 60rem;
         margin-left: 15vw;
     }
 }
