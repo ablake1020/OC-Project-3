@@ -27,7 +27,10 @@ hr {
 
 @media screen and (min-width: 768px) {
   * {
-    letter-spacing: normal;
+    letter-spacing: normal !important;
+  }
+  .header__arrow {
+    display: none !important;
   }
   .steps {
     display: -ms-grid !important;
@@ -39,9 +42,6 @@ hr {
   .steps__heading__text {
     margin-left: 10%;
     width: 300px;
-  }
-  #steps__contents-list-1, #steps__contents-list-2, #steps__contents-list-3 {
-    letter-spacing: normal;
   }
   .restaurant__img {
     width: 100%;
@@ -76,22 +76,38 @@ hr {
     margin-left: 75% !important;
   }
   .br-mobile {
-    display: none;
+    display: none !important;
   }
   .menu__heading {
     padding-left: 15vw;
     width: 100%;
     position: relative;
   }
+  .menu__items {
+    height: 4.75rem !important;
+    overflow-y: hidden;
+  }
   .menu__items__heading {
     letter-spacing: normal;
   }
   .menu__items__priceCheck {
-    padding-left: 3rem;
+    margin-left: 60vw !important;
   }
   .menu__listings {
-    width: 60rem;
+    width: 75vw;
     margin-left: 15vw;
+  }
+  #menu__items__priceCheck {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin: 43px 0 0 60vw !important;
+    font-size: 1rem;
   }
 }
 
@@ -109,6 +125,18 @@ hr {
           animation-delay: 4.2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+.loader-wrapper h1 {
+  margin-top: 55vh;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #ff79da;
+}
+
+.loader-wrapper h1 span {
+  color: #9356dc;
+  font-family: shrikhand;
 }
 
 .loader {
@@ -652,7 +680,7 @@ a {
   background-color: #99e2d0;
   -webkit-box-shadow: 0 2px 10px 0.5px lightgray;
           box-shadow: 0 2px 10px 0.5px lightgray;
-  margin: -215px 0 0 70%;
+  margin: -220px 0 0 70%;
   position: relative;
 }
 
@@ -735,6 +763,7 @@ a {
   width: 90%;
   -webkit-box-shadow: 0 2px 10px 0.5px lightgray;
           box-shadow: 0 2px 10px 0.5px lightgray;
+  position: relative;
   height: 4.75rem;
   background-color: #fff;
   margin: 16px 0 0 20px;
@@ -764,6 +793,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   color: #606060;
+  text-overflow: ellipsis;
 }
 
 .menu__items__priceCheck {
@@ -774,11 +804,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  margin: -20px 0 0 85%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  position: absolute;
+  margin: 43px 0 0 76vw;
   letter-spacing: -.75px;
   font-size: 1rem;
 }
@@ -788,10 +815,83 @@ a {
   overflow-y: hidden;
 }
 
-.menu__items__priceCheck div {
+.menu__items:hover .check {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 1.25s ease-in-out;
+  transition: -webkit-transform 1.25s ease-in-out;
+  transition: transform 1.25s ease-in-out;
+  transition: transform 1.25s ease-in-out, -webkit-transform 1.25s ease-in-out;
+}
+
+.menu__items:hover .check__circle {
+  -webkit-transition-duration: 0.55s;
+          transition-duration: 0.55s;
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+  -webkit-transition-delay: .45s;
+          transition-delay: .45s;
+}
+
+.menu__items:hover .menu__items__priceCheck {
+  -webkit-transition: -webkit-transform 1.25s ease-in-out;
+  transition: -webkit-transform 1.25s ease-in-out;
+  transition: transform 1.25s ease-in-out;
+  transition: transform 1.25s ease-in-out, -webkit-transform 1.25s ease-in-out;
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.check {
+  width: 4.5rem;
+  height: 4.75rem;
+  margin-left: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #99e2d0;
-  color: white;
-  overflow-y: hidden;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.check__circle {
+  color: #fff;
+  font-size: 150%;
+}
+
+.check__circle:hover {
+  -webkit-transition-duration: 600ms;
+          transition-duration: 600ms;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+
+#check {
+  width: 4.5rem;
+  height: 5.85rem;
+  margin-left: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .restaurants__hearts-menu {
@@ -865,5 +965,19 @@ a {
   margin: 16px 0 0 20px;
   border-radius: 1rem;
   font-weight: 600;
+}
+
+#menu__items__priceCheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  margin: 62px 0 0 76vw;
+  letter-spacing: -.75px;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

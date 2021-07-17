@@ -1,13 +1,23 @@
 // loading screen animation \\
 .loader-wrapper {
     @include loader-wrapper;
+    & h1 {
+        margin-top: 55vh;
+        text-align: center;
+        font-size: 1.25rem;
+        color: $color-secondary;
+        & span {
+            color: $color-primary;
+            font-family: shrikhand;
+        }
+    }
 }
 
 .loader {
     @include loader;
 }
 
-//homepage keyframes \\
+//homepage loader keyframes \\
 
 @keyframes spin {
     0% {

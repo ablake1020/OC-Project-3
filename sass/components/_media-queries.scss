@@ -1,6 +1,10 @@
 @media  screen and (min-width: 768px) {
     * {
-        letter-spacing: normal;
+        letter-spacing: normal !important;
+    }
+
+    .header__arrow {
+        display: none !important;
     }
     
     // how it works \\
@@ -15,10 +19,6 @@
         margin-left: 10%;
         width: 300px;
     }
-
-    #steps__contents-list-1, #steps__contents-list-2, #steps__contents-list-3 {
-        letter-spacing: normal;
-    }  
     
     //restaurants \\
 
@@ -58,7 +58,7 @@
     //menus\\
     
     .br-mobile {
-        display: none;
+        display: none !important;
     }
 
     .menu__heading {
@@ -67,16 +67,28 @@
         position: relative;
     }
 
-    .menu__items__heading {
-        letter-spacing: normal;
-    }
+    .menu__items {
+        height: 4.75rem !important;
+        overflow-y: hidden;
 
-    .menu__items__priceCheck {
-        padding-left: 3rem;
+        &__heading {
+        letter-spacing: normal;
+        }
+
+        &__priceCheck {
+        margin-left: 60vw !important;
+        }
     }
     
     .menu__listings {
-        width: 60rem;
+        width: 75vw;
         margin-left: 15vw;
+    }
+
+    #menu__items__priceCheck {
+        @include flexview-column;
+        position: relative;
+        margin: 43px 0 0 60vw !important;
+        font-size: 1rem;
     }
 }

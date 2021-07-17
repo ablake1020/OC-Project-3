@@ -45,13 +45,13 @@
             padding: 8px 0 0 10px;
             width: fit-content;
             color: #606060;
+            text-overflow: ellipsis;
         }
 
         &__priceCheck {
             @include flexview-column;
-            position: relative;
-            margin: -20px 0 0 85%;
-            width: fit-content;
+            position: absolute;
+            margin: 43px 0 0 76vw;
             letter-spacing: -.75px;
             font-size: 1rem;
         }
@@ -61,16 +61,60 @@
             overflow-y: hidden;
         }
 
-        &__priceCheck div {
-            background-color: $color-tertiary;
-            color: white;
-            //@include flexview;
-            //flex-basis: 65px;
-            //flex-grow: 0;
-            //flex-shrink: 0;
-            overflow-y: hidden;
+//mint transition \\
+
+        &:hover {
+            .check {
+                transform: translateX(-100%);
+                transition: transform 1.25s ease-in-out;
+            }
+
+            .check__circle {
+                transition-duration: 0.55s;
+                transform: rotate(1turn);
+                transition-delay: .45s;
+            }
+
+            .menu__items__priceCheck {
+                transition: transform 1.25s ease-in-out;
+                transform: translateX(-55px);
+                transition-delay: 0.1s;
+            }
         }
     }
+}
+
+// mint transition specs \\
+
+.check {
+    width: 4.5rem;
+    height: 4.75rem;
+    margin-left: 100%;
+    position: absolute;
+    @include flexview;
+    background-color: $color-tertiary;
+    border-radius: 0 1rem 1rem 0;
+
+    &__circle {
+        color: $white;
+        font-size: 150%;
+
+        &:hover {
+            transition-duration: 600ms;
+            transform: rotate(360deg);
+            transition-delay: 400ms;
+        }
+    }
+}
+
+#check {
+    width: 4.5rem;
+    height: 5.85rem;
+    margin-left: 100%;
+    position: absolute;
+    @include flexview;
+    background-color: $color-tertiary;
+    border-radius: 0 1rem 1rem 0;
 }
 
 .restaurants__hearts-menu {
@@ -104,4 +148,12 @@
     margin: 16px 0 0 20px;
     border-radius: 1rem;
     font-weight: 600;
+}
+
+#menu__items__priceCheck {
+    @include flexview-column;
+    position: absolute;
+    margin: 62px 0 0 76vw;
+    letter-spacing: -.75px;
+    font-size: 1rem;
 }
