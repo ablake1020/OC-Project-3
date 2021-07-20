@@ -1,22 +1,5 @@
 // loading screen animation \\
-.loader-wrapper {
-    @include loader-wrapper;
-    & h1 {
-        margin-top: 53vh;
-        text-align: center;
-        font-size: 1.25rem;
-        font-family: roboto;
-        color: $color-secondary;
-        font-weight: 300;
-        letter-spacing: -.75px;
-        animation: brand-text 3s ease-out backwards;
-        & span {
-            color: $color-primary;
-            font-family: shrikhand;
-            letter-spacing: -.75px;
-        }
-    }
-}
+
 
 .loader {
     @include loader;

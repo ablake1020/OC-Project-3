@@ -32,27 +32,34 @@
 
     &__hearts {
         @include restaurant-heart;
+        width: 32px;
 
         &--full {
-            margin: -30.5px 0 0 -29px;
             position: absolute;
-            font-size: 24px;
-            padding-left: 1px;
+            @include restaurant-heart;
+            margin-left: -1.2px;
             color: transparent;
-            background-color: transparent;
-            width: 36px;
+            font-size: 0.5rem;
 
             &:hover {
+                transform: scale(3.21);
+                transition: 1s ease-out;
                 background: linear-gradient($color-primary, $color-secondary);
-                padding-left: 2px;
-                transform: scale(1.07);
-                transition: 1500ms ease;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
     }
 }
+
+.hearts__container {
+    margin: -10% 0 0 80%;
+    width: 10%;
+    @include flexview;
+    position: relative;
+}
+
+
 
 .new {
     width: 5.5rem;
@@ -62,7 +69,7 @@
     color: darken($color-tertiary, 45);
     background-color: $color-tertiary;
     box-shadow: $box-shadow;
-    margin: -220px 0 0 70%;
+    margin: -200px 0 0 70%;
     position: relative;
 }
 

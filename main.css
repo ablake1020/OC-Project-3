@@ -111,40 +111,6 @@ hr {
   }
 }
 
-.loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  background-color: #fff;
-  -webkit-animation: spin-finished 1s;
-          animation: spin-finished 1s;
-  -webkit-animation-delay: 4.2s;
-          animation-delay: 4.2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.loader-wrapper h1 {
-  margin-top: 53vh;
-  text-align: center;
-  font-size: 1.25rem;
-  font-family: roboto;
-  color: #ff79da;
-  font-weight: 300;
-  letter-spacing: -.75px;
-  -webkit-animation: brand-text 3s ease-out backwards;
-          animation: brand-text 3s ease-out backwards;
-}
-
-.loader-wrapper h1 span {
-  color: #9356dc;
-  font-family: shrikhand;
-  letter-spacing: -.75px;
-}
-
 .loader {
   display: block;
   position: relative;
@@ -662,8 +628,6 @@ a {
 }
 
 .restaurants__hearts {
-  margin: -10% 0 20px 81%;
-  padding-left: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,28 +638,50 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.87rem;
+  width: 32px;
 }
 
 .restaurants__hearts--full {
-  margin: -30.5px 0 0 -29px;
   position: absolute;
-  font-size: 24px;
-  padding-left: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.87rem;
+  margin-left: -1.2px;
   color: transparent;
-  background-color: transparent;
-  width: 36px;
+  font-size: 0.5rem;
 }
 
 .restaurants__hearts--full:hover {
+  -webkit-transform: scale(3.21);
+          transform: scale(3.21);
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
-  padding-left: 2px;
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-  -webkit-transition: 1500ms ease;
-  transition: 1500ms ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hearts__container {
+  margin: -10% 0 0 80%;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .new {
@@ -715,7 +701,7 @@ a {
   background-color: #99e2d0;
   -webkit-box-shadow: 0 2px 10px 0.5px lightgray;
           box-shadow: 0 2px 10px 0.5px lightgray;
-  margin: -220px 0 0 70%;
+  margin: -200px 0 0 70%;
   position: relative;
 }
 

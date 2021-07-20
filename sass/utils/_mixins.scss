@@ -113,8 +113,6 @@
 }
 
 @mixin restaurant-heart {
-    margin: -10% 0 20px 81%;
-    padding-left: 2px;
     @include flexview;
     font-size: $home-icons *1.10;
 }
