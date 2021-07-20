@@ -35,8 +35,7 @@ hr {
   .steps {
     display: -ms-grid !important;
     display: grid !important;
-    -ms-grid-columns: (minmax(176px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
     margin: 3rem 7rem 0 0;
   }
   .steps__heading__text {
@@ -57,10 +56,8 @@ hr {
     margin-left: 10%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
@@ -735,7 +732,7 @@ a {
   margin-bottom: 3rem;
 }
 
-#restaurants__listing--fourth {
+#restaurants__fourth {
   margin-bottom: 4rem;
 }
 
