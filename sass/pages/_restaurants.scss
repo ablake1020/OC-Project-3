@@ -32,18 +32,16 @@
 
     &__hearts {
         @include restaurant-heart;
-        width: 32px;
 
         &--full {
             position: absolute;
-            @include restaurant-heart;
-            margin-left: -1.2px;
+            font-size: 1.25rem;
+            margin-left: .45px;
             color: transparent;
-            font-size: 0.5rem;
 
             &:hover {
-                transform: scale(3.21);
-                transition: 1s ease-out;
+                transform: scale(1.35);
+                transition: 1s ease;
                 background: linear-gradient($color-primary, $color-secondary);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;

@@ -671,32 +671,24 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
+  padding-left: .5px;
+  padding-right: .5px;
   font-size: 1.87rem;
-  width: 32px;
 }
 
 .restaurants__hearts--full {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.87rem;
-  margin-left: -1.2px;
+  font-size: 1.25rem;
+  margin-left: .45px;
   color: transparent;
-  font-size: 0.5rem;
 }
 
 .restaurants__hearts--full:hover {
-  -webkit-transform: scale(3.21);
-          transform: scale(3.21);
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
@@ -807,6 +799,24 @@ a {
           animation: menu__subheading-appear 1s ease-in;
 }
 
+.menu__hearts__container {
+  width: 50px;
+  height: 50px;
+  margin: -50px 0 0 82%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: menu-fadeIn__delay 1s ease-in;
+          animation: menu-fadeIn__delay 1s ease-in;
+}
+
 .menu__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -824,7 +834,7 @@ a {
   margin: 16px 0 0 20px;
   border-radius: 1rem;
   font-weight: 600;
-  overflow-x: hidden;
+  overflow-y: hidden;
   -webkit-animation: menu-fadeIn__delay 1s ease-in;
           animation: menu-fadeIn__delay 1s ease-in;
 }
@@ -950,13 +960,37 @@ a {
 }
 
 .restaurants__hearts-menu {
-  font-size: 1.955rem;
-  margin: -40px 0 0 82%;
-  padding: 0 2px 0 2px;
+  font-size: 1.87rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
+  padding: 0 1px 0 1px;
   cursor: pointer;
-  -webkit-animation: menu-fadeIn__delay 1s ease-in;
-          animation: menu-fadeIn__delay 1s ease-in;
+}
+
+.restaurants__hearts-menu--full {
+  color: transparent;
+  position: absolute;
+  font-size: 1.55rem;
+  cursor: pointer;
+}
+
+.restaurants__hearts-menu--full:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #bottom__1, #bottom__2, #bottom__3 {
