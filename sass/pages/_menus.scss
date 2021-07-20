@@ -30,8 +30,7 @@
     }
 
     &__hearts__container {
-        width: 50px;
-        height: 50px;
+        width: fit-content;
         margin: -50px 0 0 82%;
         position: relative;
         @include flexview;
@@ -117,7 +116,7 @@
     }
 }
 
-#check-1, #check-2, #check-3 {
+#check-1, #check-2, #check-3, #check-4 {
     width: 4.5rem;
     height: 5.85rem;
     margin-left: 100%;
@@ -133,12 +132,12 @@
     &--full {
         color: transparent;
         position: absolute;
-        font-size: 1.55rem;
+        font-size: 1.1rem;
         cursor: pointer;
         
         &:hover {
-            transform: scale(1.05);
-            transition: 1s ease;
+            transform: scale(1.5);
+            transition: 300ms ease-in-out;
             background: linear-gradient($color-primary, $color-secondary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -164,7 +163,7 @@
     }
 }
 
-#menu__items__different-1, #menu__items__different-2, #menu__items__different-3 {
+#menu__items__different-1, #menu__items__different-2, #menu__items__different-3, #menu__items__different-4 {
     @include flexview-column;
     width: 90%;
     height: 5.80rem;
@@ -174,7 +173,7 @@
     font-weight: 600;
 }
 
-#menu__items__priceCheck-1, #menu__items__priceCheck-2, #menu__items__priceCheck-3 {
+#menu__items__priceCheck-1, #menu__items__priceCheck-2, #menu__items__priceCheck-3, #menu__items__priceCheck-4 {
     @include flexview-column;
     position: absolute;
     margin: 62px 0 0 76vw;

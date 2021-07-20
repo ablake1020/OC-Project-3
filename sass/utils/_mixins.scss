@@ -80,6 +80,8 @@
     width: fit-content;
 }
 
+// restaurants \\
+
 @mixin restuarant-headings {
     margin: 5px 0 0 16px;
     width: fit-content;
@@ -120,6 +122,8 @@
     font-size: $home-icons *1.10;
 }
 
+// footer \\
+
 @mixin footer-logo {
     margin: 25px 0 15px 25px;
     font-size: 22px;
@@ -147,7 +151,7 @@
     left: 20px;
     font-size: 1.5rem;
     color: black;
-    @include flexview();
+    @include flexview;
     position: absolute;
 }
 
@@ -165,8 +169,7 @@
 @mixin menu-heart {
     font-size: $home-icons *1.10;
     @include flexview;
-    position: absolute;
-    padding: 0 1px 0 1px;
+    padding: 6px;
     cursor: pointer;
 }
 

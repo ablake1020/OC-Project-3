@@ -34,14 +34,14 @@
         @include restaurant-heart;
 
         &--full {
-            position: absolute;
-            font-size: 1.25rem;
-            margin-left: .45px;
             color: transparent;
+            position: absolute;
+            font-size: 1.1rem;
+            cursor: pointer;
 
             &:hover {
-                transform: scale(1.35);
-                transition: 1s ease;
+                transform: scale(1.5);
+                transition: 300ms ease-in-out;
                 background: linear-gradient($color-primary, $color-secondary);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
