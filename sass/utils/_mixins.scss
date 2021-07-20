@@ -113,20 +113,10 @@
 }
 
 @mixin restaurant-heart {
-    margin: -10% 0 20px 83%;
-    @include flexview;
-    width: 36px;
+    margin: -10% 0 20px 81%;
     padding-left: 2px;
-    font-size: $home-icons *1.15;
-    cursor: pointer;
-        
-    &:hover, &:active {
-        transform: scale(1.15);
-        transition: 300ms ease-in-out;
-        background: -webkit-linear-gradient($color-primary, $color-secondary);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
+    @include flexview;
+    font-size: $home-icons *1.10;
 }
 
 @mixin footer-logo {

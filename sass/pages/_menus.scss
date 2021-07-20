@@ -107,7 +107,7 @@
     }
 }
 
-#check {
+#check-1, #check-2, #check-3 {
     width: 4.5rem;
     height: 5.85rem;
     margin-left: 100%;
@@ -140,17 +140,17 @@
     }
 }
 
-#menu__items__different {
+#menu__items__different-1, #menu__items__different-2, #menu__items__different-3 {
     @include flexview-column;
     width: 90%;
-    height: 5.85rem;
+    height: 5.80rem;
     background-color: $white;
     margin: 16px 0 0 20px;
     border-radius: 1rem;
     font-weight: 600;
 }
 
-#menu__items__priceCheck {
+#menu__items__priceCheck-1, #menu__items__priceCheck-2, #menu__items__priceCheck-3 {
     @include flexview-column;
     position: absolute;
     margin: 62px 0 0 76vw;

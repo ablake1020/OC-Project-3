@@ -1,5 +1,5 @@
 @media  screen and (min-width: 768px) {
-    * {
+    *, body, html {
         letter-spacing: normal !important;
     }
 
@@ -52,7 +52,7 @@
     }
 
     .new {
-    margin-left: 75% !important;
+        margin: 20px 0 180px 0;
     }
 
     //menus\\
@@ -85,7 +85,7 @@
         margin-left: 15vw;
     }
 
-    #menu__items__priceCheck {
+    #menu__items__priceCheck-1, #menu__items__priceCheck-2, #menu__items__priceCheck-3 {
         @include flexview-column;
         position: relative;
         margin: 43px 0 0 60vw !important;

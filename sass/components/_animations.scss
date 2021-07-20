@@ -2,13 +2,18 @@
 .loader-wrapper {
     @include loader-wrapper;
     & h1 {
-        margin-top: 55vh;
+        margin-top: 53vh;
         text-align: center;
         font-size: 1.25rem;
+        font-family: roboto;
         color: $color-secondary;
+        font-weight: 300;
+        letter-spacing: -.75px;
+        animation: brand-text 3s ease-out backwards;
         & span {
             color: $color-primary;
             font-family: shrikhand;
+            letter-spacing: -.75px;
         }
     }
 }
@@ -36,6 +41,18 @@
     100% {
       opacity: 0;
       z-index: -1;
+    }
+}
+
+@keyframes brand-text {
+    0% {
+        transform: translate(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
     }
 }
 
